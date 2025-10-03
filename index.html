@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yige Gong - Research Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid #013220;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #1a1a1a;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 1.5em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .metadata {
+            color: #888;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            color: #013220;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #1a1a1a;
+            padding-bottom: 10px;
+        }
+
+        .section h3 {
+            color: #1a1a1a;
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+        }
+
+        .abstract {
+            background-color: #f0f9f0;
+            padding: 25px;
+            border-left: 4px solid #013220;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        .highlight-box {
+            background-color: #f0f9f0;
+            border: 1px solid #90ee90;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .result-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #013220;
+        }
+
+        .result-card h4 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .image-placeholder {
+            background-color: #f5f5f5;
+            border: 2px dashed #1a1a1a;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 8px;
+            color: #1a1a1a;
+            font-style: italic;
+        }
+
+        .methodology-steps {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .methodology-steps ol {
+            margin-left: 20px;
+        }
+
+        .methodology-steps li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .conclusions {
+            background-color: #f0f9f0;
+            border: 1px solid #90ee90;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .conclusions h3 {
+            color: #013220;
+            margin-bottom: 15px;
+        }
+
+        .tech-note {
+            font-size: 0.9em;
+            color: #6c757d;
+            font-style: italic;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .references {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .references ol {
+            margin-left: 20px;
+        }
+
+        .references li {
+            margin-bottom: 8px;
+        }
+
+        .references a {
+            color: #013220;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 2px solid #e9ecef;
+            margin-top: 50px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .results-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Ecological Niche Characterization of a Bacillus Soil Isolate</h1>
+            <div class="subtitle">through Metabolic and Gene Expression Analysis</div>
+            <div class="metadata">
+                Yige Gong<br>
+                Triton Research & Experiential Learning Scholars (TRELS) Program<br>
+                University of California, San Diego<br>
+                <br>
+                Advisors: Dr. Maxwell Neal and Dr. Karsten Zengler
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="abstract">
+                The investigation of complex interactions within a soil microbiome is instrumental for enhancing agricultural practices by elucidating microbial contributions to soil fertility and plant health. This project reconstructed the Model of Metabolism and Gene Expression (ME-model) for a Bacillus soil isolate from its genome-scale metabolic model (M-model) through a semi-automated pipeline. We found out the optimal nutritional combinations that maximize biomass and important antimicrobial compounds in terms of carbon sources, nitrogen sources. This detailed profiling of this isolate sheds light on its ecological niche and informs future studies of the complex interactions that define its native soil microbiome.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Background</h2>
+            
+            <h3>What is a ME-Model?</h3>
+            <ul>
+                <li><strong>Genome-Scale Metabolic Model (M-model):</strong> Mathematical representation of an organism's genomic sequence and metabolic pathways to simulate complex living systems<sup>1</sup></li>
+                <li><strong>ME-model (Model of Metabolism and Gene Expression):</strong> Enhanced model that includes gene expression machinery (RNA polymerase, ribosomes, tRNA) and models transcription and translation processes for more accurate metabolic activity predictions<sup>2</sup></li>
+            </ul>
+
+            <div class="image-placeholder">
+                <img src="Picture1.png" alt="ME-Model Construction Process" style="width: 100%; max-width: 800px; height: auto;">
+                <p style="text-align: center; margin-top: 10px;"><sup>3</sup></p>
+            </div>
+
+            <h3>About Bacillus</h3>
+            <p>Bacillus is a genus of Gram-positive, rod-shaped bacteria. The most famous species, <em>Bacillus subtilis</em>, is a well-studied model organism and one of the bacterial champions in secreted enzyme production for industrial applications.</p>
+
+            <div class="image-placeholder">
+                <img src="Picture2.jpg" alt="Bacillus Cell - Electron microscopy image" style="width: 100%; max-width: 600px; height: auto;">
+                <p style="text-align: center; margin-top: 10px;"><sup>4</sup></p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Methodology</h2>
+
+            <p>To reconstruct a ME-model for the target Bacillus organism, we employed a semi-automated reconstruction pipeline which includes algorithms to generate a draft ME-model at the beginning. Specifically, the algorithm reads the given M-model and a genome sequence and annotation file to map transcriptional and translational relationships and then transfers missing essential components (e.g. genes, reactions, metabolic pathways, and enzymes) from the ME-model of a reference organism. A draft ME-model that profiles the genome, metabolism, transcriptome, and proteome of the target organism is then generated with potential gaps identified. At this step, 80%-90% of gene functions are integrated into the model, and the remaining gaps or mis-included components are left for manual curation. The manual curation process constituted approximately 70% of the project timeline.</p>
+
+            <h3>Manual Curation Process</h3>
+            <div class="methodology-steps">
+                <ol>
+                    <li>Run the current model to check growth rates, energy production, and metabolic pathways until all of them reflect known capabilities and experimental values from literature</li>
+                    <li>Identify potential causes for the breaking points of the model, especially missing genes, reactions, metabolic pathways, and enzymes and placeholder components transferred from the reference model highlighted by the algorithm</li>
+                    <li>Cross-reference these problem-causing candidates with databases to determine if any reactions, pathways, and genes should be added or removed to fix the current problems</li>
+                    <li>Edit the identified problematic components accordingly</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Experimental Design</h2>
+
+            <p>With the curated ME-model, we ran simulations to acquire predictions of optimal growth rates, resource utilization, and antimicrobial production under a range of nutritional environments to determine the ecological niche of this Bacillus soil isolate.</p>
+
+            <h3>Optimization Objectives</h3>
+            <p>The simulations were designed to maximize the following cellular functions:</p>
+            <ul>
+                <li><strong>Biomass production (growth rate)</strong></li>
+                <li><strong>Antimicrobial compound synthesis:</strong>
+                    <ul>
+                        <li><strong>Surfactin:</strong> Amphiphilic lipopeptide that destabilizes cell membranes<sup>5</sup></li>
+                        <li><strong>Fengycin:</strong> Lipopeptide complex with antifungal activity against filamentous fungi<sup>6</sup></li>
+                        <li><strong>Iturin:</strong> Broad-spectrum antibacterial lipopeptide secreted in the plant rhizosphere<sup>6</sup></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Environmental Variables</h3>
+            <p>To comprehensively characterize the isolate's metabolic capabilities, we systematically tested:</p>
+            <ul>
+                <li><strong>Carbon sources:</strong> 215 different compounds</li>
+                <li><strong>Nitrogen sources:</strong> 132 different compounds</li>
+                <li><strong>Oxygen availability:</strong> Aerobic versus anaerobic conditions</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Results</h2>
+
+            <div class="result-card">
+                <h4>Carbon Source Analysis</h4>
+                <div class="image-placeholder">
+                    <img src="Picture3.png" alt="Antimicrobial Production vs Carbon Sources" style="width: 100%; height: auto;">
+                </div>
+                <p><strong>Key finding:</strong> Sucrose (C₁₂H₂₂O₁₁) showed highest performance with growth rate of 1.78 and significant antimicrobial production for all three compounds.</p>
+            </div>
+
+            <div class="result-card">
+                <h4>Nitrogen Source Analysis</h4>
+                <div class="image-placeholder">
+                    <img src="Picture4.png" alt="Antimicrobial Production vs Nitrogen Sources" style="width: 100%; height: auto;">
+                </div>
+                <p><strong>Key finding:</strong> Gly-L-Pro (C₇H₁₂N₂O₃) demonstrated optimal performance with growth rate of 1.73 and balanced antimicrobial compound production.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="conclusions">
+                <h2>Conclusions</h2>
+                <p>The Bacillus soil isolate achieves maximum growth rate and antimicrobial production under aerobic conditions with sucrose (C₁₂H₂₂O₁₁) as the carbon source and Gly-L-Pro (C₇H₁₂N₂O₃) as the nitrogen source. These findings provide a computational framework for understanding this isolate's ecological niche and potential applications in biotechnology and agricultural biocontrol.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Applications</h2>
+            <p>This detailed metabolic characterization enables optimized production of antimicrobial compounds for biotechnology applications, enhances understanding of plant-beneficial bacteria for agricultural biocontrol, provides a framework for studying complex microbial interactions in soil microbiome research, and supports optimization of <em>Bacillus</em> cultivation conditions for industrial enzyme production.</p>
+        </section>
+
+        <div class="references">
+            <h3>References</h3>
+            <ol>
+                <li><a href="https://doi.org/10.1186/s13059-019-1730-3">Gu, C., Kim, G.B., Kim, W.J., Kim, H.U., & Lee, S.Y. (2019). Current status and applications of genome-scale metabolic models. <em>Genome Biology</em>, 20(1), 121.</a></li>
+                <li><a href="https://doi.org/10.1371/journal.pcbi.1006302">Lloyd, C. J., Ebrahim, A., Yang, L., King, Z. A., Catoiu, E., O'Brien, E. J., Liu, J. K., & Palsson, B. O. (2018). COBRAme: A computational framework for genome-scale models of metabolism and gene expression. <em>PLoS Computational Biology</em>, 14(7), e1006302.</a></li>
+                <li><a href="https://www.researchgate.net/figure/An-overview-of-the-COBRAme-ME-model-formulation-The-previous-ME-models-implemented_fig3_326214786">Overview of the COBRAme ME-model formulation. <em>ResearchGate</em> (Figure).</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Bacillus">Bacillus. <em>Wikipedia</em>, The Free Encyclopedia.</a></li>
+                <li><a href="https://doi.org/10.3934/microbiol.2023012">Zhen, C., Ge, X.-F., Lu, Y.-T., & Liu, W.-Z. (2023). Chemical structure, properties and potential applications of surfactin, as well as advanced strategies for improving its microbial production. <em>AIMS Microbiology</em>, 9(2), 195-217.</a></li>
+                <li><a href="https://doi.org/10.3389/fmicb.2021.682437">Xiao, J., Guo, X., Qiao, X., Zhang, X., Chen, X., & Zhang, D. (2021). Activity of Fengycin and Iturin A Isolated From Bacillus subtilis Z-14 on Gaeumannomyces graminis Var. tritici and Soil Microbial Diversity. <em>Frontiers in Microbiology</em>, 12, 682437.</a></li>
+            </ol>
+        </div>
+
+        <footer class="contact-info">
+            <h3>Acknowledgments</h3>
+            <p>This research was conducted through the Triton Research & Experiential Learning Scholars (TRELS) Program at the University of California, San Diego, under the guidance of Dr. Maxwell Neal and Dr. Karsten Zengler.</p>
+        </footer>
+    </div>
+</body>
+</html>
